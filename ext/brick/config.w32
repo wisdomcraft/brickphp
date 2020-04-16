@@ -1,0 +1,7 @@
+ARG_ENABLE('brick', 'brick support', 'no');
+
+if (PHP_BRICK != 'no') {
+	AC_DEFINE('HAVE_BRICK', 1, 'brick support enabled');
+
+	EXTENSION('brick', 'brick.c', null, '/DZEND_ENABLE_STATIC_TSRMLS_CACHE=1');
+}

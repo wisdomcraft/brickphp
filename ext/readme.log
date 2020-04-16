@@ -1,0 +1,13 @@
+
+install, for example
+
+# cd ext/brick
+# /usr/local/php/bin/phpize
+# ./configure --with-php-config=/usr/local/php/bin/php-config
+# make
+# make install
+# vi /usr/local/php/lib/php.ini
+    add a line, extension=brick.so
+# systemctl restart php-fpm
+
+
